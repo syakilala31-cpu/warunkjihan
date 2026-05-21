@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Warunk jajan jihan</title>
+  <link rel="stylesheet" href="Praktikum_Dasar.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <a href="#beranda" class="logo">
+      <img src="gambar/Logo Makanan Tradisional Nasi Gudeg.png" alt="Logo Restoran Jihan" class="logo-img" />
+      <span>Warunk jajan Jihan</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#beranda">Beranda</a></li>
+      <li><a href="#produk">Produk</a></li>
+      <li><a href="#cara-pesan">Cara Pesan</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+    <button class="theme-toggle" type="button" aria-label="Ganti tema">🌙</button>
+  </nav>
+
+  <section id="beranda" class="hero">
+    <div class="hero-layout">
+      <div class="hero-teks">
+        <h1>Jajanan warunk jihan</h1>
+        <p>Enak, murah, bikin nagih</p>
+        <div class="hero-actions">
+          <a href="#produk" class="tombol tombol-primary">Belanja Sekarang</a>
+          <a href="#cara-pesan" class="tombol tombol-secondary">Lihat Cara Pesan</a>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <img src="gambar/download (37).jpg" alt="Menu ayam pedas Restoran Jihan" />
+      </div>
+    </div>
+  </section>
+
+  <section id="produk" class="section-produk">
+    <h2>Menu Kami</h2>
+    <p class="subjudul">Pilih menu kesukaanmu</p>
+
+    <div class="produk-search">
+      <div class="search-field">
+        <span class="search-icon">🔎</span>
+        <label for="search-produk" class="visually-hidden">Cari produk</label>
+        <input id="search-produk" type="search" placeholder="Cari menu, nasi, minum, atau jajanan..." autocomplete="off" />
+      </div>
+    </div>
+    <p class="search-feedback visually-hidden" id="search-feedback">Produk tidak ditemukan. Coba kata kunci lain.</p>
+
+    <div class="kategori">
+      <button class="active" data-filter="all">All</button>
+      <button data-filter="jajan">jajan</button>
+      <button data-filter="nasi">nasi</button>
+      <button data-filter="minum">minum</button>
+    </div>
+
+    <div class="menu-grid">
+
+      <div class="menu-card" data-kategori="jajan">
+        <img src="gambar/Sichuan Chili Oil Wontons Recipe.jpg" alt="Pangsit chili oil">
+        <h3>Pangsit chili oil</h3>
+        <p class="menu-desc">Pangsit lembut dengan saus pedas khas dan aroma bawang putih.</p>
+        <p class="menu-price">Rp 10.000</p>
+        <button class="btn-tambah">Order</button>
+      </div>
+
+      <div class="menu-card" data-kategori="jajan">
+        <img src="gambar/Pisang goreng dengan taburi keju dan meises.jpg" alt="Pisang nugget">
+        <h3>Pisang nugget</h3>
+        <p class="menu-desc">Pisang goreng renyah dengan topping keju dan cokelat manis.</p>
+        <p class="menu-price">Rp 10.000</p>
+        <button class="btn-tambah">Order</button>
+      </div>
+
+      <div class="menu-card" data-kategori="jajan">
+        <img src="gambar/Products.jpg" alt="Mie goreng">
+        <h3>Mie goreng</h3>
+        <p class="menu-desc">Mie goreng special dengan sayuran segar dan bumbu rumah.</p>
+        <p class="menu-price">Rp 15.000</p>
+        <button class="btn-tambah">Order</button>
+      </div>
+
+      <div class="menu-card" data-kategori="nasi">
+        <img src="gambar/Delicious Fried Rice with Vegetables and Egg Asian Cuisine.jpg" alt="Nasi Goreng">
+        <h3>Nasi Goreng</h3>
+        <p class="menu-desc">Nasi goreng wangi dengan telur, ayam suwir, dan acar segar.</p>
+        <p class="menu-price">Rp 15.000</p>
+        <button class="btn-tambah">Order</button>
+      </div>
+
+      <div class="menu-card" data-kategori="nasi">
+        <img src="gambar/Grilled Chicken Thighs With Vegetables, Grilled, Grilled Chicken, Food PNG Transparent Clipart Image and PSD File for Free Download.jpg" alt="Paket nasi ayam komplit">
+        <h3>Paket nasi ayam komplit</h3>
+        <p class="menu-desc">Nasi putih, ayam goreng, telur, sayur, dan sambal spesial.</p>
+        <p class="menu-price">Rp 20.000</p>
+        <button class="btn-tambah">Order</button>
+      </div>
+
+      <div class="menu-card" data-kategori="minum">
+        <img src="gambar/download (38).jpg" alt="Es Teh">
+        <h3>Es Teh</h3>
+        <p class="menu-desc">Es teh manis dingin yang pas untuk melepas dahaga.</p>
+        <p class="menu-price">Rp 5.000</p>
+        <button class="btn-tambah">Order</button>
+      </div>
+
+      <div class="menu-card" data-kategori="minum">
+        <img src="gambar/download (39).jpg" alt="Milk tea">
+        <h3>Milk tea</h3>
+        <p class="menu-desc">Milk tea creamy dengan rasa lembut dan manis seimbang.</p>
+        <p class="menu-price">Rp 10.000</p>
+        <button class="btn-tambah">Order</button>
+      </div>
+
+      <div class="menu-card" data-kategori="minum">
+        <img src="gambar/43b9e59db22943da24b85330d1fb13ab.jpg" alt="Es Jeruk">
+        <h3>Es Jeruk</h3>
+        <p class="menu-desc">Es jeruk segar dengan perasan jeruk asli dan es batu.</p>
+        <p class="menu-price">Rp 7.000</p>
+        <button class="btn-tambah">Order</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CARA PESAN -->
+  <section id="cara-pesan" class="section-cara-pesan">
+    <h2>Cara Pemesanan</h2>
+    <p class="subjudul">Cara memesan makanan di Warunk Jihan</p>
+
+    <div class="steps-grid">
+      <article class="step-card">
+        <span>1</span>
+        <div class="step-card-icon">🛒</div>
+        <h3>Pilih Produk</h3>
+        <p>Klik "Tambah" pada makanan yang Anda inginkan.</p>
+      </article>
+      <article class="step-card">
+        <span>2</span>
+        <div class="step-card-icon">💬</div>
+        <h3>Checkout via WhatsApp</h3>
+        <p>Tekan tombol checkout, pesanan otomatis terkirim ke kami.</p>
+      </article>
+      <article class="step-card">
+        <span>3</span>
+        <div class="step-card-icon">💳</div>
+        <h3>Pilih Cara Bayar</h3>
+        <p>Tentukan metode pembayaran : QRIS, Transfer Bank, atau Cash (COD). Kami konfirmasi stok dan total harga.</p>
+      </article>
+      <article class="step-card">
+        <span>4</span>
+        <div class="step-card-icon">🚚</div>
+        <h3>Diantar ke Rumah</h3>
+        <p>Tunggu sebentar, makanan hangat sampai ke rumah Anda.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- KONTAK -->
+  <section id="kontak" class="section-kontak">
+    <h2>Hubungi Kami 📞</h2>
+    <p class="subjudul">Tersedia bantuan cepat dan pemesanan langsung.</p>
+
+    <div class="kontak-wrap">
+      <div class="contact-cards">
+        <article class="contact-card">
+          <div class="contact-card-icon">📞</div>
+          <h3>Hubungi Kami</h3>
+          <div class="contact-details">
+            <a class="contact-item" href="https://www.google.com/maps/place/Bogor,+West+Java" target="_blank" rel="noreferrer">
+              <span class="contact-item-icon">📍</span>
+              <span>Bogor, Jawa Barat</span>
+            </a>
+            <a class="contact-item" href="https://wa.me/6281234567890?text=Halo%20Warunk%20Jajan%20Jihan%2C%20saya%20ingin%20pesan" target="_blank" rel="noreferrer">
+              <span class="contact-item-icon">📱</span>
+              <span>+62 812-3456-7890</span>
+            </a>
+            <a class="contact-item" href="mailto:restoranjihan@gmail.com">
+              <span class="contact-item-icon">✉️</span>
+              <span>restoranjihan@gmail.com</span>
+            </a>
+          </div>
+        </article>
+        <article class="contact-card contact-card-social">
+          <div class="contact-card-icon">✨</div>
+          <h3>Media Sosial</h3>
+          <div class="social-links">
+            <a class="social-link" href="https://instagram.com/warunkjihan" target="_blank" rel="noreferrer">
+              <img class="social-logo" src="gambar/53902526786092740-removebg-preview.png" alt="Logo Instagram" />
+              <span>Instagram</span>
+            </a>
+            <a class="social-link" href="https://www.facebook.com/WarunkJajanJihan" target="_blank" rel="noreferrer">
+              <img class="social-logo" src="gambar/72cd90b2282f6b85bd6a53f272eefa85-removebg-preview.png" alt="Logo Facebook" />
+              <span>Facebook</span>
+            </a>
+            <a class="social-link" href="https://www.tiktok.com/@warunkjihan" target="_blank" rel="noreferrer">
+              <img class="social-logo" src="gambar/e10e3f21d3b4e0f40b04b8fee7f40da4-removebg-preview.png" alt="Logo TikTok" />
+              <span>TikTok</span>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <form id="form-kontak" class="contact-form">
+        <div class="form-group">
+          <label for="nama">Nama</label>
+          <input id="nama" name="nama" type="text" placeholder="Contoh: Siti Nurhayati" autocomplete="name" required pattern="[A-Za-z\s]+" title="Hanya boleh huruf dan spasi" />
+        </div>
+
+        <div class="form-group">
+          <label for="whatsapp">WhatsApp</label>
+          <input id="whatsapp" name="whatsapp" type="tel" placeholder="Contoh: 081234567890" autocomplete="tel" required pattern="[0-9+\s]+" title="Hanya boleh angka, spasi, atau tanda +" />
+        </div>
+
+        <div class="form-group">
+          <label for="pesan">Pesan</label>
+          <textarea id="pesan" name="pesan" rows="4" placeholder="Contoh: Pesan ayam goreng untuk 2 orang" required minlength="10"></textarea>
+        </div>
+
+        <button class="tombol tombol-full">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+
+  <div class="modal-overlay" id="product-modal" aria-hidden="true">
+    <div class="modal-card">
+      <button type="button" class="modal-close" aria-label="Tutup detail produk">✕</button>
+      <div class="modal-image">
+        <img src="" alt="Detail produk" />
+      </div>
+      <div class="modal-content">
+        <span class="modal-category"></span>
+        <h3 class="modal-title"></h3>
+        <p class="modal-price"></p>
+        <p class="modal-description"></p>
+        <button type="button" class="modal-order tombol">Tambah ke Keranjang</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="payment-modal" aria-hidden="true">
+    <div class="modal-card payment-card">
+      <button type="button" class="modal-close" aria-label="Tutup pembayaran">✕</button>
+      <div class="modal-content">
+        <span class="modal-category">Metode Pembayaran</span>
+        <h3 class="modal-title">Pilih Metode Pembayaran</h3>
+        <div class="payment-summary"></div>
+        <div class="payment-total-panel">
+          <span>Total Pesanan</span>
+          <strong class="payment-total">Rp 0</strong>
+        </div>
+        <div class="payment-methods">
+          <!-- Ganti src berikut dengan file logo metode pembayaran di folder gambar/ -->
+          <label>
+            <input type="radio" name="payment-method" value="ShopeePay" />
+            <img class="payment-logo" src="gambar/9e6e51d6b86ff434a4b26102703aee5f-removebg-preview.png" alt="Logo ShopeePay" />
+            <span>ShopeePay</span>
+          </label>
+          <label>
+            <input type="radio" name="payment-method" value="GoPay" />
+            <img class="payment-logo" src="gambar/feceb2ca508603b06c2f7ba18a5d018d.jpg" alt="Logo GoPay" />
+            <span>GoPay</span>
+          </label>
+          <label>
+            <input type="radio" name="payment-method" value="Transfer Bank BCA" />
+            <img class="payment-logo" src="gambar/b48d5c693587925fd743e9b69d306125.jpg" alt="Logo BCA" />
+            <span>Transfer Bank BCA</span>
+          </label>
+          <label>
+            <input type="radio" name="payment-method" value="Transfer Bank Mandiri" />
+            <img class="payment-logo" src="gambar/c83c391d240e3cf0732a8c05f37ebd3b.jpg" alt="Logo Mandiri" />
+            <span>Transfer Bank Mandiri</span>
+          </label>
+        </div>
+        <button type="button" class="modal-order tombol payment-pay">Bayar Sekarang</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPT (WAJIB DI BAWAH) -->
+  <script src="script.js"></script>
+
+</body>
+</html>
